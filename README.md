@@ -7,3 +7,5 @@ The project contains the following methods:
 - loading matrix from file
 - creating identity matrix
 
+ and many others
+
