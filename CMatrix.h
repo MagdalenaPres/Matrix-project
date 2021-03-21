@@ -168,9 +168,9 @@ void CMatrix<T>::fillTheMatrixWithZeros()
 };
 
 template <typename T>
-void CMatrix<T>::setIdentityMatrix(Errors* er)//ma na glownej przekontej 1 i reszta 0 
+void CMatrix<T>::setIdentityMatrix(Errors* er)
 {
-	if (C_Rows == C_Columns) // sprawdzam, czy to macierz kwadratowa
+	if (C_Rows == C_Columns) 
 	{
 		for (int i = 0; i < C_Rows; i++)
 			for (int j = 0; j < C_Columns; j++)
@@ -226,7 +226,7 @@ CMatrix<T> CMatrix<T>::transposition()
 template<typename T>
 bool CMatrix<T>::loadMatrixFromFile(string fileName, Errors* er)
 {
-	vector<int> numbersOfNumberOfColumns;  //w razie gdyby w ka¿dym wierszu by³a rózna liczba kolumn
+	vector<int> numbersOfNumberOfColumns;  
 	ifstream file;
 	stringstream stringStream;
 	string rowOfMatrix;
